@@ -13,6 +13,8 @@
 		B6478FF625266F8E0043ED52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6478FF525266F8E0043ED52 /* Assets.xcassets */; };
 		B6478FF925266F8E0043ED52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6478FF725266F8E0043ED52 /* LaunchScreen.storyboard */; };
 		B6478FFC25266F8E0043ED52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6478FFB25266F8E0043ED52 /* main.m */; };
+		B647900F2526731C0043ED52 /* SHBArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = B647900E2526731C0043ED52 /* SHBArtist.m */; };
+		B64790142526854A0043ED52 /* SHBArtistController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64790132526854A0043ED52 /* SHBArtistController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		B6478FF825266F8E0043ED52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6478FFA25266F8E0043ED52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6478FFB25266F8E0043ED52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B647900D2526731C0043ED52 /* SHBArtist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHBArtist.h; sourceTree = "<group>"; };
+		B647900E2526731C0043ED52 /* SHBArtist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHBArtist.m; sourceTree = "<group>"; };
+		B64790122526854A0043ED52 /* SHBArtistController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHBArtistController.h; sourceTree = "<group>"; };
+		B64790132526854A0043ED52 /* SHBArtistController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHBArtistController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +64,10 @@
 		B6478FE825266F880043ED52 /* MyOwnApp-36 */ = {
 			isa = PBXGroup;
 			children = (
+				B647900C252672510043ED52 /* Models */,
+				B647900B252672430043ED52 /* Views */,
+				B6479008252671FF0043ED52 /* Controllers */,
 				B647900325266FBF0043ED52 /* Resources */,
-				B6478FF225266F880043ED52 /* Main.storyboard */,
 			);
 			path = "MyOwnApp-36";
 			sourceTree = "<group>";
@@ -77,6 +85,48 @@
 				B6478FFB25266F8E0043ED52 /* main.m */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		B6479008252671FF0043ED52 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B647900A252672210043ED52 /* ModelControllers */,
+				B64790092526720B0043ED52 /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B64790092526720B0043ED52 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B647900A252672210043ED52 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B64790122526854A0043ED52 /* SHBArtistController.h */,
+				B64790132526854A0043ED52 /* SHBArtistController.m */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		B647900B252672430043ED52 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B6478FF225266F880043ED52 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B647900C252672510043ED52 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B647900D2526731C0043ED52 /* SHBArtist.h */,
+				B647900E2526731C0043ED52 /* SHBArtist.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +155,7 @@
 		B6478FDE25266F880043ED52 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SHB;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					B6478FE525266F880043ED52 = {
@@ -150,6 +201,8 @@
 			files = (
 				B6478FEB25266F880043ED52 /* AppDelegate.m in Sources */,
 				B6478FFC25266F8E0043ED52 /* main.m in Sources */,
+				B647900F2526731C0043ED52 /* SHBArtist.m in Sources */,
+				B64790142526854A0043ED52 /* SHBArtistController.m in Sources */,
 				B6478FEE25266F880043ED52 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
